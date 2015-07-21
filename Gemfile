@@ -13,6 +13,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'materialize-sass'
 gem 'devise'
+gem 'bcrypt'
+gem 'toastr-rails'
 
 group :development, :test do
   gem 'byebug'
