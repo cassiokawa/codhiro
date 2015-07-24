@@ -4,6 +4,10 @@
 
     <h5>Entrar</h5>
 
+    <%= link_to "Entrar com Google", user_omniauth_authorize_path(:google_oauth2), class:"btn red darken-1" %> <br/><br/>
+    <%= link_to "Entrar com Facebook", user_omniauth_authorize_path(:facebook), class:"btn blue darken-4" %> <br/><br/>
+    <%= link_to "Entrar com Github", user_omniauth_authorize_path(:github), class:"btn grey darken-2" %>
+
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
        <%= render 'shared/devisemes' %>
 

@@ -17,6 +17,11 @@ gem 'bcrypt'
 gem 'toastr-rails'
 gem 'mandrill-api', '1.0.52', require: "mandrill"
 
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
+gem 'omniauth-github'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
