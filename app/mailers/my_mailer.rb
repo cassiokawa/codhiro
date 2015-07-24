@@ -9,7 +9,7 @@ class MyMailer < ActionMailer::Base
         template_name = "novo-usuario"
         template_content =[]
         message = {
-            to: [{email: "#{user.email}"}]
+            to: [{email: "#{user.email}"}],
             subject: "Bem vindo ao projeto Supernova",
             merge_vars: [
                 {
@@ -21,7 +21,7 @@ class MyMailer < ActionMailer::Base
 
         }
 
-        mandrill_client.messages.send_template template_name, template_content
+        mandrill_client.messages.send_template template_name, template_content, message
     end
 
 
