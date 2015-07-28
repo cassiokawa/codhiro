@@ -3,6 +3,7 @@ Rails.application.routes.draw do
                      :path_names => {:sign_in => 'login', :sign_out => 'logout', :edit=> "profile"}, 
                      :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
+
   get 'pages/about'
 
   root 'pages#about'
