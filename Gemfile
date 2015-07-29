@@ -22,6 +22,10 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
 
+gem 'tzinfo-data'
+gem 'figaro'
+
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'

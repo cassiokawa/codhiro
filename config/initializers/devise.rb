@@ -21,10 +21,10 @@ Devise.setup do |config|
   'IxWkDTzcz7oAw-hYisieWq_0', {access_type: "offline", approval_prompt: ""}
 
   require 'omniauth-facebook'
-  config.omniauth :facebook, '1017402161626925','491e90b9ab08451c27c4adfcc373554c'
+  config.omniauth :facebook, '1017402161626925','147319f76a24624e0d797830620ec601' 
 
   require 'omniauth-github'
-  config.omniauth :github, 'd6a9f7cd2e3f0b2b82b7','1288eebbaec4259af7c402b520d55cb1c40f8218', scope:"user:email"
+  config.omniauth :github, 'd6a9f7cd2e3f0b2b82b7','1288eebbaec4259af7c402b520d55cb1c40f8218', scope:"user:email" 
 
 
 end

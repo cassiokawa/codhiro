@@ -81,7 +81,7 @@ def self.find_for_github_oauth(access_token, signed_in_resource=nil)
            provider: access_token["provider"],
            email: data["email"],
            uid: access_token["uid"],
-           image: database_authenticatable["image"],
+           image: data["image"],
            password: Devise.friendly_token[0,20]
          )
      end
