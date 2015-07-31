@@ -8,12 +8,12 @@ ActiveAdmin.register Project do
 			row :content
 			row :price
 			row :image do
-				project.image? ? image_tag( project.image.url, height: '100' ) : content_tag(:span, "No image")
+				project.image? ? image_tag(project.image.url, height: '100') : content_tag(:span , "No image")
 			end
 		end
 	end
 
-	form :html => {:enctype => "multipart/form-data" } do |f|
+	form :html => { :enctype => "multipart/form-data"} do |f|
 		f.inputs do
 			f.input :name
 			f.input :content
@@ -22,4 +22,5 @@ ActiveAdmin.register Project do
 		end
 		f.actions
 	end
+
 end
