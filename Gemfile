@@ -29,6 +29,7 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'redcarpet', '~> 3.3.2'
 gem 'coderay', '~> 1.1.0'
+gem "active_admin-sortable_tree"
 
 gem 'tzinfo-data'
 gem 'figaro'

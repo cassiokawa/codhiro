@@ -7,6 +7,11 @@ class Project < ActiveRecord::Base
 	validates :content , presence: true, length: {maximum: 500}
 	validates :price , presence: true, numericality: { only_integer: true }
 
-	has_attached_file :image, :styles => { :medium => "600x300>", :thumb => "175x75>" }
-  	validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+	has_attached_file :image, :styles => { :medium => "300x150>", :thumb => "175x75>" }
+  validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+
+  def shortname
+  	name.length > 25? name[0..25]+"..." : name
+  end
+
 end
