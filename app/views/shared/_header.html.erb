@@ -3,17 +3,17 @@
 <header><!-- collaper nav mobile -->
 	
   <!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
+  <ul id="dropdown1" class="dropdown-content mask">
     <li><%= link_to "Meu perfil", edit_user_registration_path %></li>
-    <li><a href="#!">Meus cursos</a></li> 
+    <li><%= link_to "Meus projetos" , myprojects_path %></li> 
     <li class="divider"></li>
     <li><%= link_to "Log Out", destroy_user_session_path , method: :delete %></li>
   </ul>
 
   <!-- Dropdown Structure -->
-  <ul id="dropdown2" class="dropdown-content">
+  <ul id="dropdown2" class="dropdown-content mask">
     <li><%= link_to "Meu perfil", edit_user_registration_path %></li>
-    <li><a href="#!">Meus cursos</a></li>
+    <li><%= link_to "Meus projetos" , myprojects_path %></li> 
     <li class="divider"></li>
     <li><%= link_to "Log Out", destroy_user_session_path , method: :delete %></li>
   </ul>
@@ -24,7 +24,7 @@
 		<div class="container">
 
 	    <div class="nav-wrapper">
-	      <a href="#!" class="brand-logo">Supernova</a>
+        <%= link_to "Supernova", root_path, class: "brand-logo"%>
 	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	      <ul class="right hide-on-med-and-down">
 	        <li><%= link_to "Cursos", root_path %></li>
@@ -34,7 +34,7 @@
           <% else %>
           <!-- Dropdown Trigger -->
            <li><a class="dropdown-button valign-wrapper" href="#!" data-activates="dropdown1">
-           <!--  <%= image_tag avatar_url(current_user), class: "circle responsive-img" %>&nbsp; -->
+           <!--  <%= image_tag avatar_url(current_user), class: "circle responsive-img avatar-small" %>&nbsp; -->
             <%= current_user.name %> <i class="material-icons right">arrow_drop_down</i></a>
 
           </li>
