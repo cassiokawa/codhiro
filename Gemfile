@@ -31,6 +31,8 @@ gem 'redcarpet', '~> 3.3.2'
 gem 'coderay', '~> 1.1.0'
 gem "active_admin-sortable_tree"
 
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 gem 'tzinfo-data'
 gem 'figaro'
 
