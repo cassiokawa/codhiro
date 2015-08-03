@@ -20,7 +20,7 @@ class Project < ActiveRecord::Base
   end
 
   def average_rating
-  	reviews.blank? ? 0 : reviews.average(:star)
+  	reviews.blank? ? 0 : reviews.average(:star).round(2)
   end
 
 
