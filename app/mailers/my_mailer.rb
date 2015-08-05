@@ -2,7 +2,7 @@
 class MyMailer < ActionMailer::Base
 
     def mandrill_client
-        @mandrill_client ||= Mandrill::API.new 'CZk2Ch4h1CQJoNy1b7zdHA'
+        @mandrill_client ||= Mandrill::API.new ENV['MAILER_API_KEY']
     end
 
     def new_user(user)
