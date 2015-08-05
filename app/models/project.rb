@@ -1,6 +1,6 @@
 class Project < ActiveRecord::Base
 	extend FriendlyId
-    friendly_id :name, use: [:slugged, :finders]
+  friendly_id :name, use: [:slugged, :finders]
 	has_many :tasks
 
 	has_many :subscriptions

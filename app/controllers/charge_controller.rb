@@ -20,14 +20,14 @@ class ChargeController < ApplicationController
 
 		  charge = Stripe::Charge.create(
 		    :customer    => customer.id,
-		    :amount      => projec.price_in_cents,
-		    :description => projec.name
+		    :amount      => project.price_in_cents,
+		    :description => project.name,
 		    :currency    => 'brl'
 		  )
 
 		  if charge
-		  	current_user.subscription.create(project: project)
-		  	redirect_to projec
+		  	current_user.subscriptions.create(project: project)
+		  	redirect_to project
 		  end
 
 

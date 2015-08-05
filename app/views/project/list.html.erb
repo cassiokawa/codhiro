@@ -1,15 +1,17 @@
 <h1>My Projects </h1> 
-<div class="row"data-no-turbolink>
+<div class="row" data-no-turbolink>
 <br/>
 
 <% if @projects.count > 0 %>
 	<% @projects.each do |project| %>
 	<% end %>
+
+<% else %>
 	<div class="center">
 		<h5>Currently you're not in any projects </h5>
 		<%= link_to "Show me all Projects", root_path , class: "btn btn-primary"%>
-		
 		</div>
-	<% end %>
+
+<% end %>
 
 </div>
