@@ -35,6 +35,8 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'tzinfo-data'
 gem 'figaro'
 
+gem 'aws-sdk', '< 2.0'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
