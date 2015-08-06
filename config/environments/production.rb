@@ -30,7 +30,7 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
-  
+
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
@@ -77,7 +77,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.assets.precompile += %w[active_admin.css active_admin.js.coffee]
+  config.assets.precompile += %w[active_admin.css active_admin.js]
   
   config.action_mailer.default_url_options = {host: 'https://projsnova.herokuapp.com/'}
   config.action_mailer.delivery_method = :smtp
